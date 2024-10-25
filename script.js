@@ -26,7 +26,7 @@ console.log(lowerCaseGreeting);
 
 // 5. Ripeti una stringa
 // Ripeti la stringa weather 3 volte con uno spazio tra le ripetizioni e stampa il risultato
-const repeatedWeather = `${weather} ${weather} ${weather}`;
+const repeatedWeather = `${(weather + " ").repeat(3)}`;
 console.log(repeatedWeather);
 
 // 6. Estrai una sottostringa usando substr()
@@ -36,5 +36,5 @@ console.log(mountainSubstr);
 
 // 7. Aggiungi padding a una stringa
 // Aggiungi zeri all'inizio della variabile elevation per renderla lunga 6 caratteri
-const paddedElevation = `${"00"}${elevation}`;
+const paddedElevation = elevation.padStart(6, "0");
 console.log(paddedElevation);
